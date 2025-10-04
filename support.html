@@ -1,46 +1,75 @@
+
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>지원 및 문의 | PushMe</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>PushMe 지원 | Support</title>
 <style>
-body { font-family: "Noto Sans KR", sans-serif; padding: 40px; line-height: 1.7; color: #333; max-width: 900px; margin: auto; }
-h1 { color: #2a3cff; }
-h2 { margin-top: 32px; color: #222; }
-a { color: #2a3cff; text-decoration: none; }
-footer { margin-top: 60px; font-size: 14px; color: #777; }
-form { margin-top: 20px; }
-input, textarea {
-  width: 100%; padding: 10px; margin: 8px 0;
-  border: 1px solid #ccc; border-radius: 6px; font-size: 15px;
-}
-button {
-  background-color: #2a3cff; color: #fff; border: none;
-  padding: 12px 24px; border-radius: 8px; cursor: pointer;
-}
-button:hover { background-color: #1e2fce; }
-</style>
+    body { font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; line-height: 1.6; margin: 0; color: #111; }
+    header { background: #f43f5e; color: #fff; padding: 28px 20px; }
+    main { max-width: 860px; margin: 0 auto; padding: 24px; }
+    h1 { margin: 0 0 6px 0; font-size: 28px; }
+    h2 { margin-top: 28px; border-bottom: 1px solid #eee; padding-bottom: 6px; }
+    a { color: #e11d48; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code { background: #f6f8fa; padding: 2px 6px; border-radius: 6px; }
+    footer { margin-top: 48px; padding: 24px; background: #fafafa; color: #555; font-size: 14px; }
+    .card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 16px 18px; margin: 14px 0; }
+    ul { padding-left: 18px; }
+  </style>
 </head>
 <body>
-<h1>PushMe 지원 및 문의</h1>
-<p>PushMe 서비스 관련 문의사항이나 기술 지원 요청은 아래 이메일 또는 문의 폼을 통해 접수해 주세요.</p>
-
-<h2>문의 메일</h2>
-<p><a href="mailto:2025pushme@gmail.com">2025pushme@gmail.com</a></p>
-
-<h2>문의 양식</h2>
-<form action="https://formspree.io/f/mwpeyvjy" method="POST">
-  <label>이름</label>
-  <input type="text" name="name" required>
-  <label>이메일</label>
-  <input type="email" name="email" required>
-  <label>문의 내용</label>
-  <textarea name="message" rows="6" required></textarea>
-  <button type="submit">보내기</button>
-</form>
-
-<p><a href="index.html">← 홈으로 돌아가기</a></p>
-<footer>© 2025 PushMe</footer>
+<header>
+<h1>PushMe 지원</h1>
+<p>문제가 생기면 아래 안내를 따라주세요. 빠르게 답변드리겠습니다.</p>
+</header>
+<main>
+<section class="card">
+<h2>연락처</h2>
+<p>이메일: <a href="mailto:2025pushme@gmail.com">2025pushme@gmail.com</a></p>
+<p>운영 시간: 평일 10:00–18:00 (KST)</p>
+</section>
+<section class="card">
+<h2>자주 묻는 질문</h2>
+<h3>1) iOS에서 알림이 오지 않아요</h3>
+<ul>
+<li><b>설정 ▸ 알림 ▸ PushMe</b>에서 배너/사운드/배지 허용을 켭니다.</li>
+<li>Wi-Fi/데이터 상태를 확인하고, 백그라운드 새로고침을 허용하세요.</li>
+<li>앱을 다시 실행하여 토큰이 갱신되도록 합니다.</li>
+</ul>
+<h3>2) 알림을 탭해도 링크가 안 열려요</h3>
+<ul>
+<li>최신 버전으로 업데이트 후 다시 시도하세요.</li>
+<li>VPN/차단 앱 사용 시 일시 해제하고 재시도합니다.</li>
+</ul>
+<h3>3) 테스트용 푸시 토큰이 필요해요</h3>
+<ul>
+<li>앱 내 <b>FCM 토큰 표시</b> 화면에서 복사 후 담당자에게 전달하세요.</li>
+</ul>
+</section>
+<section class="card">
+<h2>버그 신고 템플릿</h2>
+<p style="font-size:14px;color:#6b7280;margin-top:-6px;">※ 아래 항목은 작성 가이드입니다. <b>예시는 실제 버그가 아닙니다.</b> 필요한 부분만 채워 주세요.</p>
+<ul>
+<li><b>기기/OS</b>: (예: iPhone 15 Pro, iOS 18.0)</li>
+<li><b>앱 버전</b>: (예: 1.0.0 / 빌드 1)</li>
+<li><b>현상</b>: (예: 특정 조건에서 알림 배너가 표시되지 않음)</li>
+<li><b>재현 절차</b>: (예: 1) XX 설정 ON → 2) YY 화면에서 Z 버튼 탭 → 3) …)</li>
+<li><b>기대 결과</b>: (예: 알림 배너가 즉시 표시되어야 함)</li>
+<li><b>실제 결과</b>: (예: 배너 미표시, 사운드만 들림)</li>
+<li><b>추가 자료</b>: 스크린샷/영상/로그 시간(타임존 포함)</li>
+</ul>
+</section>
+<section class="card">
+<h2>법적 고지</h2>
+<p>본 페이지는 PushMe 앱의 공식 지원 채널입니다. 개인정보 처리에 관한 내용은 <a href="./pushme-privacy.html">개인정보처리방침</a>을 참조하세요.</p>
+</section>
+</main>
+<footer>
+<div>© 2025 PushMe. All rights reserved.</div>
+<div>문의: <a href="mailto:2025pushme@gmail.com">2025pushme@gmail.com</a></div>
+</footer>
 </body>
 </html>
