@@ -1,18 +1,46 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>지원(문의) 페이지</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>지원 및 문의 | PushMe</title>
 <style>
-body { font-family: "Noto Sans KR", sans-serif; padding: 40px; line-height: 1.6; }
+body { font-family: "Noto Sans KR", sans-serif; padding: 40px; line-height: 1.7; color: #333; max-width: 900px; margin: auto; }
+h1 { color: #2a3cff; }
+h2 { margin-top: 32px; color: #222; }
 a { color: #2a3cff; text-decoration: none; }
+footer { margin-top: 60px; font-size: 14px; color: #777; }
+form { margin-top: 20px; }
+input, textarea {
+  width: 100%; padding: 10px; margin: 8px 0;
+  border: 1px solid #ccc; border-radius: 6px; font-size: 15px;
+}
+button {
+  background-color: #2a3cff; color: #fff; border: none;
+  padding: 12px 24px; border-radius: 8px; cursor: pointer;
+}
+button:hover { background-color: #1e2fce; }
 </style>
 </head>
 <body>
-<h1>PushMe 지원(문의)</h1>
-<p>서비스 관련 문의사항이 있을 경우 아래 메일로 연락 주세요.</p>
-<p><strong>이메일:</strong> <a href="mailto:2025pushme@gmail.com">2025pushme@gmail.com</a></p>
+<h1>PushMe 지원 및 문의</h1>
+<p>PushMe 서비스 관련 문의사항이나 기술 지원 요청은 아래 이메일 또는 문의 폼을 통해 접수해 주세요.</p>
+
+<h2>문의 메일</h2>
+<p><a href="mailto:2025pushme@gmail.com">2025pushme@gmail.com</a></p>
+
+<h2>문의 양식</h2>
+<form action="https://formspree.io/f/mwpeyvjy" method="POST">
+  <label>이름</label>
+  <input type="text" name="name" required>
+  <label>이메일</label>
+  <input type="email" name="email" required>
+  <label>문의 내용</label>
+  <textarea name="message" rows="6" required></textarea>
+  <button type="submit">보내기</button>
+</form>
+
 <p><a href="index.html">← 홈으로 돌아가기</a></p>
+<footer>© 2025 PushMe</footer>
 </body>
 </html>
